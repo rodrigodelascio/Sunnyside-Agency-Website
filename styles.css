@@ -457,7 +457,7 @@ body {
 
 .footer-logo-container img {
   filter: invert(40%) sepia(15%) saturate(1337%) hue-rotate(118deg)
-    brightness(93%) contrast(94%);
+    brightness(65%) contrast(94%);
 }
 
 .footer-links-container {
@@ -493,7 +493,9 @@ body {
 .attribution {
   background: #90d4c6;
   width: 100vw;
+  font-family: "Barlow", sans-serif;
   font-size: 0.75rem;
+  letter-spacing: 0.007rem;
   text-align: center;
   color: #2c7566;
   padding-bottom: 2rem;
