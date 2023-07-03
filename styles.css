@@ -276,6 +276,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .graphic-container h2 {
@@ -295,7 +296,8 @@ body {
   font-weight: 600;
   line-height: 1.5rem;
   letter-spacing: -0.00633rem;
-  padding: 0 10rem;
+  flex-wrap: wrap;
+  width: 50%;
 }
 
 .photography-container {
@@ -309,6 +311,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .photography-container h2 {
@@ -328,15 +331,178 @@ body {
   font-weight: 600;
   line-height: 1.5rem;
   letter-spacing: -0.00633rem;
-  padding: 0 10rem;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+/* Testimonials Section */
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonials-title-container h2 {
+  color: #a7aaad;
+  font-size: 1.11111rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: 0.27778rem;
+  text-transform: uppercase;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+
+.testimonials-cards-container {
+  display: flex;
+}
+
+.testimonials-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20rem;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.testimonial-image-container {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.testimonial-image-container img {
+  max-width: 100%;
+}
+
+.testimonial-text-container {
+  margin-bottom: 2rem;
+}
+
+.testimonial-text-container p {
+  color: #5b636d;
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  line-height: 1.77778rem;
+  letter-spacing: -0.00717rem;
+}
+
+.testimonial-identification {
+  margin-bottom: 8rem;
+}
+
+.testimonial-identification h3 {
+  color: #24303e;
+  font-size: 1rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: -0.00717rem;
+  line-height: 0;
+}
+
+.testimonial-identification p {
+  color: #a7aaad;
+  font-size: 0.77778rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  line-height: 1.38889rem;
+  letter-spacing: -0.00556rem;
+}
+
+/* Gallery Section */
+
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 25%;
+}
+
+.gallery-wrapper {
+  width: 25%;
+  height: 25rem;
+  overflow: hidden;
+  object-fit: fill;
+}
+
+.gallery-wrapper img {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 /* Footer section */
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.footer-container {
+  background: #90d4c6;
+  width: 100vw;
+  height: 17.44444rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.footer-logo-container {
+  margin-bottom: 2rem;
+}
+
+.footer-logo-container img {
+  filter: invert(40%) sepia(15%) saturate(1337%) hue-rotate(118deg)
+    brightness(93%) contrast(94%);
+}
+
+.footer-links-container {
+  margin-bottom: 4rem;
+}
+
+.footer-links-container a {
+  color: #458d7e;
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  line-height: 1.38889rem;
+  letter-spacing: -0.00717rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.footer-links-container a:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.footer-icons-container img {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.footer-icons-container img:hover {
+  cursor: pointer;
+  filter: invert(100%) sepia(100%) saturate(0%) brightness(200%) contrast(100%);
+}
+
+.attribution {
+  background: #90d4c6;
+  width: 100vw;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #2c7566;
+  padding-bottom: 2rem;
+}
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #2c7566;
+}
+
+.attribution a:hover {
+  color: #fff;
 }
