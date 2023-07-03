@@ -8,6 +8,8 @@ body {
   font-size: 18px;
 }
 
+/* Navbar Section */
+
 .navbar-container {
   position: absolute;
   display: flex;
@@ -62,6 +64,8 @@ body {
   cursor: pointer;
 }
 
+/* Landing Hero Section */
+
 .landing-container {
   position: relative;
   display: flex;
@@ -97,6 +101,77 @@ body {
   text-transform: uppercase;
   white-space: nowrap;
   margin-bottom: 3.5rem;
+}
+
+/* Transform Brand Section */
+
+.branding-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 33.33333rem;
+}
+
+.transform-brand-container {
+  width: 30%;
+  padding: 10%;
+}
+
+.transform-brand-container h2 {
+  color: #24303e;
+  font-size: 2.22222rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: -0.01589rem;
+}
+
+.transform-brand-container p {
+  color: #808397;
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  line-height: 1.66667rem;
+  letter-spacing: -0.00717rem;
+}
+
+.transform-brand-container a {
+  color: #24303e;
+  font-size: 0.83333rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  line-height: 1.38889rem;
+  letter-spacing: 0.05556rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.transform-brand-container a::after {
+  content: "";
+  width: 110%;
+  height: 0.4rem;
+  background-color: #fad40045;
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.transform-brand-container a:hover {
+  cursor: pointer;
+}
+
+.egg-image-container {
+  width: 50%;
+  overflow: hidden;
+  height: 33.33333rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.egg-image-container img {
+  min-height: 100%;
 }
 
 .attribution {
