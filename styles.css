@@ -14,16 +14,19 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  width: 75.11111rem;
-  height: 3.11111rem;
-  margin: 3rem;
+  min-width: 90%;
+  margin: 3% 6%;
+}
+
+.logo-container img {
+  width: 9.44444rem;
+  height: 1.83333rem;
 }
 
 .navbar-container a {
   color: #fff;
   font-size: 1rem;
   font-family: "Barlow", sans-serif;
-  font-style: normal;
   font-weight: 600;
   line-height: 1.38889rem;
   letter-spacing: -0.00717rem;
@@ -46,9 +49,12 @@ body {
   text-transform: uppercase;
 }
 
-.logo-container img {
-  width: 10.625rem;
-  height: 2.0625rem;
+.navbar-container a:hover {
+  cursor: pointer;
+}
+
+.navbar-container button:hover {
+  cursor: pointer;
 }
 
 .landing-container {
