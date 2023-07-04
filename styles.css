@@ -568,6 +568,11 @@ br {
   }
 
   .hamburger-links-container {
+    display: none;
+  }
+
+  .hamburger-links-container.active {
+    display: block;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -579,7 +584,6 @@ br {
     width: 100%;
     height: 12rem;
     padding: 2rem 0;
-    display: none;
   }
 
   /* Landing Hero Section */
