@@ -35,10 +35,6 @@ br {
   height: 1.83333rem;
 }
 
-.logo-container img:hover {
-  cursor: pointer;
-}
-
 .navbar-container a {
   color: #fff;
   font-size: 1rem;
@@ -67,6 +63,7 @@ br {
 
 .navbar-container a:hover {
   cursor: pointer;
+  opacity: 75%;
 }
 
 .navbar-container button:hover {
@@ -374,7 +371,7 @@ br {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 20%;
+  width: 25%;
   flex-wrap: wrap;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -561,10 +558,20 @@ br {
     margin: 0;
   }
 
+  .hamburger-links-container a:hover {
+    opacity: 75%;
+  }
+
   .hamburger-links-container button {
     display: block;
     background: #fad400;
+    color: #24303e;
     margin: 0;
+  }
+
+  .hamburger-links-container button:hover {
+    background: #fad40075;
+    color: #24303e;
   }
 
   .hamburger-links-container {
@@ -584,6 +591,18 @@ br {
     width: 100%;
     height: 12rem;
     padding: 2rem 0;
+  }
+
+  .hamburger-links-container:after {
+    content: "";
+    position: absolute;
+    top: -4%;
+    right: -0.63rem;
+    width: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    border-top: 0;
+    transform: rotate(-90deg);
   }
 
   /* Landing Hero Section */
@@ -769,7 +788,7 @@ br {
   /* Footer section */
 
   .footer-links-container {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   .footer-links-container a {
