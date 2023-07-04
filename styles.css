@@ -13,6 +13,10 @@ br {
   display: none;
 }
 
+.hamburger-menu-container {
+  display: none;
+}
+
 /* Navbar Section */
 
 .navbar-container {
@@ -518,7 +522,15 @@ br {
 /* Responsive Media Queries */
 
 @media screen and (max-width: 768px) {
+  .hamburger-menu-container {
+    display: block;
+  }
+
   /* Navbar Section */
+
+  .navbar-container {
+    margin: 5%;
+  }
 
   .logo-container img {
     width: 6.86867rem;
@@ -526,14 +538,60 @@ br {
   }
 
   .navbar-container a {
-    visibility: hidden;
+    display: none;
   }
 
   .navbar-container button {
-    visibility: hidden;
+    display: none;
+  }
+
+  .hamburger-menu-icon-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hamburger-menu-icon:hover {
+    opacity: 50%;
+    cursor: pointer;
+  }
+
+  .hamburger-links-container a {
+    display: block;
+    color: #808397;
+    margin: 0;
+  }
+
+  .hamburger-links-container button {
+    display: block;
+    background: #fad400;
+    margin: 0;
+  }
+
+  .hamburger-links-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    top: 4rem;
+    background: #fff;
+    width: 100%;
+    height: 12rem;
+    padding: 2rem 0;
+    display: none;
   }
 
   /* Landing Hero Section */
+
+  .landing-container {
+    height: 80vh;
+  }
+
+  .hero-image-container img {
+    min-width: 100vw;
+    object-fit: cover;
+  }
 
   .hero-text-container h1 {
     font-size: 2.22222rem;
@@ -654,6 +712,12 @@ br {
 @media screen and (max-width: 576px) {
   br {
     display: block;
+  }
+
+  /* Navbar Section */
+
+  .navbar-container {
+    margin-top: 7.5%;
   }
 
   /* Landing Hero Section */
