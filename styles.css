@@ -9,6 +9,10 @@ body {
   scroll-behavior: smooth;
 }
 
+br {
+  display: none;
+}
+
 /* Navbar Section */
 
 .navbar-container {
@@ -286,7 +290,7 @@ body {
   font-weight: 900;
   letter-spacing: -0.01111rem;
   line-height: 0;
-  padding-top: 22rem;
+  padding-top: 21rem;
 }
 
 .graphic-container p {
@@ -321,7 +325,7 @@ body {
   font-weight: 900;
   letter-spacing: -0.01111rem;
   line-height: 0;
-  padding-top: 22rem;
+  padding-top: 21rem;
 }
 
 .photography-container p {
@@ -342,6 +346,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 100vw;
 }
 
 .testimonials-title-container h2 {
@@ -357,6 +362,7 @@ body {
 
 .testimonials-cards-container {
   display: flex;
+  justify-content: center;
 }
 
 .testimonials-card {
@@ -364,7 +370,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 20rem;
+  width: 20%;
   flex-wrap: wrap;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -507,4 +513,203 @@ body {
 
 .attribution a:hover {
   color: #fff;
+}
+
+/* Responsive Media Queries */
+
+@media screen and (max-width: 768px) {
+  /* Navbar Section */
+
+  .logo-container img {
+    width: 6.86867rem;
+    height: 1.33333rem;
+  }
+
+  .navbar-container a {
+    visibility: hidden;
+  }
+
+  .navbar-container button {
+    visibility: hidden;
+  }
+
+  /* Landing Hero Section */
+
+  .hero-text-container h1 {
+    font-size: 2.22222rem;
+    letter-spacing: 0.34722rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Transform Brand Section */
+
+  .branding-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .transform-brand-container {
+    width: 80%;
+    padding: 10%;
+    text-align: center;
+    order: 2;
+  }
+
+  .egg-image-container {
+    min-width: 100%;
+    height: 30rem;
+    order: 1;
+  }
+
+  .egg-image-container img {
+    object-fit: cover;
+    min-width: 100%;
+  }
+
+  /* Stand Out Section */
+
+  .standingout-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .cup-image-container {
+    min-width: 100%;
+    height: 30rem;
+  }
+
+  .cup-image-container img {
+    object-fit: cover;
+    min-width: 100%;
+  }
+
+  .stand-out-container {
+    width: 80%;
+    padding: 10%;
+    text-align: center;
+  }
+
+  /* Graphic Design and Photography Section */
+
+  .graphic-photography-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .graphic-container {
+    width: 100%;
+  }
+
+  .photography-container {
+    width: 100%;
+  }
+
+  /* Testimonials Section */
+
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+  }
+
+  .testimonials-title-container h2 {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .testimonials-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials-card {
+    width: 50%;
+  }
+
+  .testimonial-image-container {
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-text-container {
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-identification {
+    margin-bottom: 5rem;
+  }
+
+  /* Gallery Section */
+
+  .gallery-container {
+    flex-wrap: wrap;
+  }
+
+  .gallery-wrapper {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  br {
+    display: block;
+  }
+
+  /* Landing Hero Section */
+
+  .landing-container {
+    height: 120vh;
+  }
+
+  .hero-image-container img {
+    min-width: 100vw;
+    object-fit: cover;
+  }
+
+  .hero-text-container {
+    top: 20%;
+    text-align: center;
+  }
+
+  .hero-text-container h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Graphic Design and Photography Section */
+
+  .graphic-container p {
+    width: 80%;
+  }
+
+  .photography-container p {
+    width: 80%;
+  }
+
+  /* Testimonials Section */
+
+  .testimonials-card {
+    width: 80%;
+  }
+
+  /* Gallery Section */
+
+  .gallery-wrapper {
+    height: 15rem;
+  }
+
+  /* Footer section */
+
+  .footer-links-container {
+    margin-bottom: 2rem;
+  }
+
+  .footer-links-container a {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .attribution {
+    padding-bottom: 1.5rem;
+  }
 }
