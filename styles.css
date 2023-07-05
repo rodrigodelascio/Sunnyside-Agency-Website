@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 
-/* font-family: 'Barlow', sans-serif;
-font-family: 'Fraunces', serif; */
-
 body {
   margin: 0;
   font-size: 18px;
@@ -16,6 +13,8 @@ br {
 .hamburger-menu-container {
   display: none;
 }
+
+/* HOME PAGE */
 
 /* Navbar Section */
 
@@ -43,6 +42,7 @@ br {
   line-height: 1.38889rem;
   letter-spacing: -0.00717rem;
   margin-left: 2.61rem;
+  text-decoration: none;
 }
 
 .navbar-container button {
@@ -480,6 +480,7 @@ br {
   letter-spacing: -0.00717rem;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
+  text-decoration: none;
 }
 
 .footer-links-container a:hover {
@@ -798,5 +799,150 @@ br {
 
   .attribution {
     padding-bottom: 1.5rem;
+  }
+}
+
+/* ABOUT PAGE */
+
+/* Landing Hero Section */
+
+.about-landing-container {
+  position: relative;
+  display: flex;
+}
+
+.about-hero-image-container {
+  display: flex;
+  object-fit: contain;
+}
+
+.about-hero-image-container img {
+  display: flex;
+  max-width: 100vw;
+}
+
+.about-hero-text-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero-text-container h1 {
+  color: #fff;
+  font-family: "Fraunces", serif;
+  font-size: 3.11111rem;
+  font-weight: 900;
+  letter-spacing: 0.48611rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 2rem;
+}
+
+/* About Text Section */
+
+.about-text-container {
+  margin: 5rem;
+}
+
+.about-text-wrapper {
+  padding: 0 5rem;
+}
+
+.about-text-wrapper h2 {
+  color: #24303e;
+  font-size: 2.22222rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: -0.01589rem;
+}
+
+.about-text-wrapper p {
+  color: #5b636d;
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  line-height: 1.77778rem;
+  letter-spacing: -0.00717rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* Landing Hero Section */
+
+  .about-landing-container {
+    height: 80vh;
+  }
+
+  .about-hero-image-container img {
+    min-width: 100vw;
+    object-fit: cover;
+  }
+
+  .about-hero-text-container h1 {
+    font-size: 2.22222rem;
+    letter-spacing: 0.34722rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* About Text Section */
+
+  .about-text-container {
+    margin: 3rem;
+  }
+
+  .about-text-wrapper {
+    padding: 0 3rem;
+  }
+
+  .about-text-wrapper h2 {
+    font-size: 1.7rem;
+  }
+
+  .about-text-wrapper p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Landing Hero Section */
+
+  .about-landing-container {
+    height: 120vh;
+  }
+
+  .about-hero-image-container img {
+    min-width: 100vw;
+    object-fit: cover;
+  }
+
+  .about-hero-text-container {
+    top: 20%;
+    text-align: center;
+  }
+
+  .about-hero-text-container h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  /* About Text Section */
+
+  .about-text-container {
+    margin: 1rem;
+  }
+
+  .about-text-wrapper {
+    padding: 1rem;
+  }
+
+  .about-text-wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-text-wrapper p {
+    font-size: 0.8rem;
   }
 }
