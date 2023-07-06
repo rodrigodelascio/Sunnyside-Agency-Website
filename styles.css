@@ -980,8 +980,17 @@ br {
 
 /* Projects Show Section */
 
+.tip-text-container {
+  margin: 3rem 6rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #24303e;
+  text-align: center;
+}
+
 .projects-display-container {
-  margin: 8rem 6rem 5rem 6rem;
+  margin: 5rem 6rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1021,6 +1030,18 @@ br {
 
 .card3 {
   background-image: url(./images/desktop/projects-octopus.jpg);
+}
+
+.card4 {
+  background-image: url(./images/desktop/projects-headphones.jpg);
+}
+
+.card5 {
+  background-image: url(./images/desktop/projects-perfume.jpg);
+}
+
+.card6 {
+  background-image: url(./images/desktop/projects-boots.jpg);
 }
 
 .card:hover,
@@ -1063,6 +1084,20 @@ br {
   background-color: #662d91;
 }
 
+.card__content4 {
+  background-color: #fad400;
+}
+
+.card__content5 {
+  background: #b69cff;
+  background: -webkit-linear-gradient(to bottom, #01c3cd, #b69cff);
+  background: linear-gradient(to bottom, #01c3cd, #b69cff);
+}
+
+.card__content6 {
+  background-color: #0b0e13;
+}
+
 .card:hover .card__content,
 .card2:hover .card__content2,
 .card3:hover .card__content3,
@@ -1076,7 +1111,7 @@ br {
   margin: 0;
   font-family: "Fraunces", serif;
   font-size: 2rem;
-  color: #24303e;
+  color: #fff;
   font-weight: 900;
 }
 
@@ -1084,8 +1119,8 @@ br {
   margin: 10px 0 0;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
-  font-size: 1rem;
-  color: #808397;
+  font-size: 0.9rem;
+  color: #fff;
   line-height: 1.4;
 }
 
