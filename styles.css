@@ -978,13 +978,13 @@ br {
   margin-bottom: 2rem;
 }
 
-/* Projects Show Section */
+/* Projects Display Section */
 
 .tip-text-container {
-  margin: 3rem 6rem;
+  margin: 5rem 6rem;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #24303e;
   text-align: center;
 }
@@ -1119,9 +1119,22 @@ br {
   margin: 10px 0 0;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #fff;
   line-height: 1.4;
+}
+
+@media screen and (max-width: 992px) {
+  /* Projects Display Section */
+  .card,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    width: 38vw;
+    height: 70vh;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1141,9 +1154,56 @@ br {
     letter-spacing: 0.34722rem;
     margin-bottom: 1.5rem;
   }
+
+  /* Projects Display Section */
+  .projects-display-container {
+    margin: 1.5rem 2rem;
+  }
+
+  .card,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    width: 40vw;
+    height: 70vh;
+  }
+
+  .card__title {
+    font-size: 1.5rem;
+  }
+
+  .card__description {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  /* Projects Display Section */
+  .tip-text-container {
+    margin: 1.5rem 2rem;
+    font-size: 1rem;
+  }
+
+  .projects-display-container {
+    flex-direction: column;
+  }
+
+  .card,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    width: 75vw;
+    height: 70vh;
+  }
+
+  .card__description {
+    font-size: 0.75rem;
+  }
+
   /* Projects Hero Section */
 
   .projects-landing-container {
