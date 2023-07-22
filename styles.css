@@ -184,6 +184,8 @@ br {
 
 .egg-image-container img {
   min-height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Stand Out Section */
@@ -206,6 +208,8 @@ br {
 
 .cup-image-container img {
   min-height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .stand-out-container {
