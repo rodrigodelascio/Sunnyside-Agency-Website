@@ -9,7 +9,6 @@
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -42,7 +41,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Rodrigo de Lascio](https://rodrigodelascio.tech/)
+- Website - [Rodrigo de Lascio](https://rodrigodelascio.co.uk/)
 - Frontend Mentor - [@rodrigodelascio](https://www.frontendmentor.io/profile/rodrigodelascio)
 - GitHub - [@rodrigodelascio](https://github.com/rodrigodelascio)
 - LinkedIn - [@rodrigodelascio](https://www.linkedin.com/in/rodrigo-de-lascio/)
