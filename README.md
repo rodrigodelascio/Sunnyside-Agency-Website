@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/sunnyside-landing-page.png)
+![](./images/sunnyside-website-mockup.png)
 
 ### Links
 
