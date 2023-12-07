@@ -3,36 +3,33 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
+- [The challenge](#the-challenge)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [Built with](#built-with)
 - [Author](#author)
 
 ## Overview
 
 Website for Sunnyside Creative Agency.
 
-### The challenge
+## The challenge
 
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
+## Screenshot
 
 ![](./images/sunnyside-website-mockup.png)
 
-### Links
+## Links
 
 - Solution URL: [Follow this link](https://www.frontendmentor.io/solutions/sunnyside-creative-agency-landing-page-nqqAl377Pq)
 - Live Site URL: [Follow this link](https://rodrigodelascio.github.io/Sunnyside-Agency-Website/)
 
-## My process
-
-### Built with
+## Built with
 
 - HTML
 - CSS custom properties
